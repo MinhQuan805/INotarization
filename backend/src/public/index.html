@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World API</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: white;
+      margin-bottom: 1rem;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fadeInDown 0.5s ease-out forwards;
+    }
+
+    .message {
+      background-color: white;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: scale(0.8);
+      animation: fadeInScale 0.5s ease-out 0.2s forwards;
+    }
+
+    .message p {
+      font-size: 2rem;
+      color: #333;
+      margin: 0;
+    }
+
+    .repo-cards {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      gap: 1rem;
+    }
+
+    .repo-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .repo-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .repo-card a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1.5rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .repo-card a i {
+      font-size: 2rem;
+      color: #667eea;
+    }
+
+    @keyframes fadeInDown {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInScale {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>API Says:</h1>
+    <div class="message">
+      <p id="hello-message">Loading...</p>
+    </div>
+
+    <div class="repo-cards">
+      <div class="repo-card">
+        <a href="https://github.com/ASE-UIT/03.-Online-Notarization-Management-System-FE" target="_blank">
+          <i class="fab fa-github"></i>
+          Frontend Repo
+        </a>
+      </div>
+      <div class="repo-card">
+        <a href="https://github.com/ASE-UIT/03.-Online-Notarization-Management-System-BE" target="_blank">
+          <i class="fab fa-github"></i>
+          Backend Repo
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const messageElement = document.getElementById('hello-message');
+
+      setTimeout(function () {
+        messageElement.textContent = "Hello, World!";
+      }, 1000);
+
+    });
+  </script>
+</body>
+
+</html>

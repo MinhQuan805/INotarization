@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Document Upload Confirmation</title>
+  <style media="all" type="text/css">
+    body {
+      font-family: Helvetica, sans-serif;
+      background-color: #f4f5f6;
+      font-size: 16px;
+      color: #555555;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .main {
+      background: #ffffff;
+      border: 1px solid #eaebed;
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    h1 {
+      font-size: 20px;
+      color: #333333;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #0867ec;
+      color: #ffffff !important;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #9a9ea6;
+      margin-top: 24px;
+    }
+
+    .footer a {
+      color: #9a9ea6;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <h1>Document Upload Confirmed</h1>
+      <p>Dear {{userName}},</p>
+      <p>We’re pleased to confirm that your document with ID: {{documentId}} has been successfully uploaded to our
+        system.</p>
+      <p>Our team will review your document shortly. If additional information is required, we will contact you via
+        email.</p>
+      <p style="text-align: center;">
+        <a href="https://congchungonline.netlify.app/user/history" class="btn" target="_blank">View Document Status</a>
+      </p>
+      <p>Thank you for your submission!</p>
+    </div>
+    <div class="footer">
+      <tr>
+        <td class="content-block">
+          <span class="apple-link">ASE - University of Information Technology, Vietnam National
+            University</span>
+          <br> Don't like these emails? <a href="https://www.slowey.works/">Unsubscribe</a>.
+        </td>
+      </tr>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+module.exports.Token = require('./token.model');
+module.exports.User = require('./user.model');
+module.exports.Document = require('./document.model');
+module.exports.StatusTracking = require('./statusTracking.model');
+module.exports.Role = require('./role.model');
+module.exports.NotarizationField = require('./notarizationField.model');
+module.exports.NotarizationService = require('./notarizationService.model');
+module.exports.ApproveHistory = require('./approveHistory.model');
+module.exports.Session = require('./session.model');
+module.exports.RequestSignature = require('./requestSignature.model');
+module.exports.Payment = require('./payment.model');
+module.exports.SessionStatusTracking = require('./sessionStatusTracking.model');
+module.exports.ApproveSessionHistory = require('./approveSessionHistory.model');
+module.exports.RequestSessionSignature = require('./requestSessionSignature.model');
+module.exports.UserWallet = require('./userWallet.model');

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Document Status Update</title>
+  <style media="all" type="text/css">
+    body {
+      font-family: Helvetica, sans-serif;
+      font-size: 16px;
+      background-color: #f4f5f6;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .main {
+      background: #ffffff;
+      border: 1px solid #eaebed;
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #9a9ea6;
+      margin-top: 24px;
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333333;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555555;
+      margin-bottom: 16px;
+    }
+
+    .status {
+      font-weight: bold;
+      color: #0867ec;
+    }
+
+    .feedback {
+      margin-top: 16px;
+      padding: 12px;
+      background-color: #f9f9f9;
+      border-left: 4px solid #0867ec;
+      color: #333333;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <h1>Document Status Update</h1>
+      <p>Dear user,</p>
+      <p>Your document with ID <span class="status">{{documentId}}</span> has been updated.</p>
+      <p>Status changed from <span class="status">{{currentStatus}}</span> to <span class="status">{{newStatus}}</span>.
+      </p>
+      {{#if hasFeedback}}
+      <div class="feedback">
+        <p><strong>Reason:</strong> {{feedback}}</p>
+      </div>
+      {{/if}}
+      <p>Thank you for using our service. If you have questions, feel free to contact us.</p>
+    </div>
+    <div class="footer">
+      <tr>
+        <td class="content-block">
+          <span class="apple-link">ASE - University of Information Technology, Vietnam National University</span>
+          <br> Don't like these emails? <a href="https://www.slowey.works/">Unsubscribe</a>.
+        </td>
+      </tr>
+    </div>
+  </div>
+</body>
+
+</html>
+
+</html>
